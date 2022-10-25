@@ -14,7 +14,7 @@ pipeline {
         }
         stage('build') {
             steps {
-                echo 'terraform init'
+                echo 'terraform init ${BUILD_ID}'
                
             }
         }
