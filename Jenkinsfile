@@ -1,10 +1,13 @@
 pipeline {
     agent any
+    environment {
+        
+    }
 
     stages {
         stage('Cleanup') {
             steps {
-                echo 'Hello World'
+                echo "Hello World"
             }
         }
         stage('Checkout') {
@@ -14,13 +17,13 @@ pipeline {
         }
         stage('build') {
             steps {
-                echo 'terraform init ${BUILD_ID}'
+                echo "terraform init ${BUILD_ID}"
                
             }
         }
         stage('Testing') {
             steps {
-                echo 'Testing'
+                echo "Testing"
                
             }
         }
