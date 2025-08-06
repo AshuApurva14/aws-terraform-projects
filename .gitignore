@@ -1,0 +1,37 @@
+# Terraform state files
+*.tfstate
+*.tfstate.backup
+
+# Crash log files
+crash.log
+
+# Exclude .terraform directory (plugin binaries, modules, etc.)
+.terraform/
+
+# Sensitive variable overrides
+*.tfvars
+*.tfvars.json
+
+# Override files like provider credentials
+override.tf
+override.tf.json
+*_override.tf
+*_override.tf.json
+
+# Terraform plan files
+*.plan
+
+# Local .env files or AWS credentials
+.env
+.aws/
+aws
+*.zip
+
+
+# IDE / Editor folders
+.vscode/
+.idea/
+.DS_Store
+
+# OS-generated files
+Thumbs.db
